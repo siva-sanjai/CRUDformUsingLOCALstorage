@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./profile-pic.png" >
+</head>
+<body>
+    <h1 id="hd">Registration Form</h1>
+    <form id="form" action="">
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Enter Your Name"><br>
+        <label for="phno">Mobile</label>
+        <input type="text" id="phno" placeholder="Enter Mobile Number" 
+        maxlength="10" pattern="^\d{10}$"
+        ><br>
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter Email Address"><br>
+        <label for="location">Location</label>
+<select id="location">
+    <option value="">Select a Location</option> 
+    <option value="Chennai">Chennai</option>
+<option value="Coimbatore">Coimbatore</option>
+<option value="Madurai">Madurai</option>
+<option value="Tirunelveli">Tirunelveli</option>
+<option value="Salem">Salem</option>
+<option value="Tiruchirappalli">Tiruchirappalli</option>
+<option value="Vellore">Vellore</option>
+<option value="Erode">Erode</option>
+<option value="Thanjavur">Thanjavur</option>
+<option value="Dindigul">Dindigul</option>
+<option value="Kanchipuram">Kanchipuram</option>
+<option value="Tiruppur">Tiruppur</option>
+<option value="Karur">Karur</option>
+<option value="Nagercoil">Nagercoil</option>
+<option value="Theni">Theni</option>
+<option value="Kanyakumari">Kanyakumari</option>
+<option value="Cuddalore">Cuddalore</option>
+<option value="Villupuram">Villupuram</option>
+<option value="Ramanathapuram">Ramanathapuram</option>
+<option value="Nagapattinam">Nagapattinam</option>
+<option value="Virdhachalam">Virdhachalam</option>
+<option value="Pudukkottai">Pudukkottai</option>
+<option value="Kumbakonam">Kumbakonam</option>
+<option value="Thiruvarur">Thiruvarur</option>
+<option value="Perambalur">Perambalur</option>
+<option value="Sivaganga">Sivaganga</option>
+<option value="Tiruvarur">Tiruvarur</option>
+<option value="Ariyalur">Ariyalur</option>
+<option value="Namakkal">Namakkal</option>
+<option value="Krishnagiri">Krishnagiri</option>
+
+    
+</select><br><br>
+
+        <button id="Submit">Submit</button>
+    </form><br><br>
+    <div style="overflow-x:auto;" id="output">
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Mobile</th>
+                    <th>Email</th>
+                    <th>Location</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="table-body"></tbody>
+        </table>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
